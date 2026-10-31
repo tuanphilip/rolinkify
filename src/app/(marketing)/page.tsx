@@ -13,6 +13,8 @@ import { ArrowRightIcon, CreditCardIcon, StarIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+export const dynamic = "force-static";
+
 const HomePage = async () => {
 
     const user = await currentUser();

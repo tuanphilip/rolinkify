@@ -21,7 +21,7 @@ import AnimationContainer from "../global/animation-container";
 
 const Navbar = () => {
 
-    const { user } = useClerk();
+    const user = null;
 
     const [scroll, setScroll] = useState(false);
 

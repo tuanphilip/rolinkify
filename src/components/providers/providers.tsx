@@ -14,7 +14,7 @@ const Providers = ({ children }: Props) => {
 
     return (
         <QueryClientProvider client={client}>
-            <ClerkProvider>
+            <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY || "pk_test_Y2xlcmsuZXhhbXBsZS5jb20k"}>
                 {children}
             </ClerkProvider>
         </QueryClientProvider>

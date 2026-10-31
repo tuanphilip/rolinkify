@@ -6,9 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "prisma generate"
+    "lint": "next lint"
   },
+  "packageManager": "pnpm@9.15.4",
   "dependencies": {
     "@clerk/nextjs": "^5.1.4",
     "@hookform/resolvers": "^3.6.0",

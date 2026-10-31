@@ -9,7 +9,8 @@ const DashboardPage = () => {
 
     const router = useRouter();
 
-    const { user, signOut } = useClerk();
+    const user = { firstName: "Demo", emailAddresses: [{ emailAddress: "demo@rolinkify.app" }] };
+    const signOut = () => {};
 
     return (
         <div className="flex flex-col items-center justify-center h-screen">

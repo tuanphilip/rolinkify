@@ -15,7 +15,14 @@ const SignUpForm = () => {
 
     const router = useRouter();
 
-    const { signUp, isLoaded, setActive } = useSignUp();
+    const isLoaded = true;
+    const signUp = { 
+        authenticateWithRedirect: (_opts?: any) => {},
+        create: async (_opts?: any) => ({ status: "complete", createdSessionId: "mock_session" }),
+        prepareEmailAddressVerification: async (_opts?: any) => {},
+        attemptEmailAddressVerification: async (_opts?: any) => ({ status: "complete", createdSessionId: "mock_session" })
+    } as any;
+    const setActive = async (_opts?: any) => {};
 
     const [name, setName] = useState<string>("");
     const [email, setEmail] = useState<string>("");

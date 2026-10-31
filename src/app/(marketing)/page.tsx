@@ -16,8 +16,7 @@ import Link from "next/link";
 export const dynamic = "force-static";
 
 const HomePage = async () => {
-
-    const user = await currentUser();
+    const user = null;
 
     return (
         <div className="overflow-x-hidden scrollbar-hide size-full">

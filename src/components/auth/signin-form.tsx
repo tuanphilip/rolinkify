@@ -13,7 +13,12 @@ const SignInForm = () => {
 
     const router = useRouter();
 
-    const { signIn, isLoaded, setActive } = useSignIn();
+    const isLoaded = true;
+    const signIn = { 
+        authenticateWithRedirect: (_opts?: any) => {},
+        create: async (_opts?: any) => ({ status: "complete", createdSessionId: "mock_session" })
+    } as any;
+    const setActive = async (_opts?: any) => {};
 
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
